@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Upload a PDF File</h1>
+
+    <form id="uploadForm">
+        <input type="file" name="pdf" id="pdf_file" accept="application/pdf" required />
+        <br><br>
+        <button type="submit">Upload</button>
+    </form>
+
+    <div id="response"></div>
+
+    <!-- Loading Modal -->
+    <div id="loadingModal">
+        <div id="loadingContent">
+            Uploading... Please wait.
+        </div>
+    </div>
+
+    <!-- <div id="userChatInterface">
+        <div id="chatMessages">
+            <div class="message bot">Hello! How can I help you?</div>
+        </div>
+        <input type="text" id="messagePrompt" placeholder="Ask your question here">
+        <div>
+            <form id="uploadQuery">
+                <button id="sendMessage" type="submit">Send</button>
+            </form>
+            
+        </div>
+    </div> -->
+
+    <div id="userChatInterface">
+        <div id="chatMessages">
+            <div class="message bot">Hello! How can I help you?</div>
+            <!-- More bot and user messages will go here -->
+        </div>
+        <div id="messageInputContainer">
+            <input type="text" id="messagePrompt" placeholder="Ask your question here">
+            <form id="uploadQuery">
+                <button id="sendMessage" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
